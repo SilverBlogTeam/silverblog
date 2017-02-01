@@ -1,8 +1,0 @@
-{
-  "apps" : [{
-    "name": "SmartCMS",
-    "script": "./start.sh",
-    "watch": true,
-    "merge_logs": true
-  }]
-}
