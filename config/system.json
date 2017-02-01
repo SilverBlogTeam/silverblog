@@ -1,0 +1,9 @@
+{
+  "ProjectName": "qwe7002的个人博客",
+  "Paging": 10,
+  "cache": true,
+  "redis_connect":"127.0.0.1",
+  "redis_password": "",
+  "static_cdn":"",
+  "image_cdn":""
+}
