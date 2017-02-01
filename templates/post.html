@@ -1,4 +1,7 @@
 {% include "public/head.html" %}
+<body class="post-template nav-closed">
+{% include "public/menu.html" %}
+<span class="nav-cover"></span>
 <div class="site-wrapper">
     <header class="main-header post-head no-cover">
         <nav class="main-nav clearfix">
@@ -11,7 +14,9 @@
 
             <header class="post-header">
                 <h1 class="post-title">{{ pageinfo.title }}</h1>
-                <section class="post-meta">{{ pageinfo.time }}</section>
+                <section class="post-meta">
+                    <time class="post-date" datetime="{{ pageinfo.time }}">{{ pageinfo.time }}</time>
+                </section>
             </header>
 
             <section class="post-content">
@@ -21,16 +26,13 @@
             <footer class="post-footer">
 
                 <figure class="author-image">
-                    <img class="img">
+                    <img class="img" src="{{ author_image }}">
                 </figure>
 
                 <section class="author">
-                    <h4><a href="https://qwe7002.com/author/qwe7002/">qwe7002</a></h4>
+                    <h4><a href="">qwe7002</a></h4>
                     <p>
                         一直很高调，其实就是个小丑。技术本就渣，还要冒充大牛。什么事情都爱多考虑三分，最后往往发现是想太多。爱好极简，但是做出来的东西往往还是差那么些。对自己的作品超级苛刻，往往最后逼死的是自己。半理工半文艺思维，至今没搞懂这是个什么玩意。一切都是浮云，欢喜就好。</p>
-                    <div class="author-meta">
-                        <span class="author-link icon-link"><a href="/"></a></span>
-                    </div>
                 </section>
 
                 <!-- load Disqus -->
@@ -62,7 +64,7 @@
     </main>
 
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="/">qwe7002的个人博客</a></section>
+        <section class="copyright"><a href="/">{{ project_name }}</a></section>
         <section class="poweredby">Powered by SmartCMS , Theme Modify Casper</section>
     </footer>
 

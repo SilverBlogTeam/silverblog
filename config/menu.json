@@ -1,4 +1,18 @@
-{
-  "主页":"/",
-  "About Me":"/about-me"
-}
+[
+  {
+    "name": "主页",
+    "url": "/"
+  },
+  {
+    "name": "About Me",
+    "url": "/about-me"
+  },
+  {
+    "name": "Links",
+    "url": "/links"
+  },
+  {
+    "name": "我喜欢的CD",
+    "url": "/wo-xi-huan-de-chang-pian-chang-pian-duo-shou-zhi-nan"
+  }
+]

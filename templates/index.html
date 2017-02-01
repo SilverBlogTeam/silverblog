@@ -1,6 +1,9 @@
 {% include "public/head.html" %}
+<body class="{% if nowpage!=1 %}paged archive-template {% else %}home-template {% endif %}nav-closed">
+{% include "public/menu.html" %}
+<span class="nav-cover"></span>
 <div class="site-wrapper">
-    <header class="main-header" data-original="https://oneanime.zsxsoft.com/lovelive">
+    <header class="main-header" data-original="{{ cover_image }}">
         <nav class="main-nav overlay clearfix">
             <a class="menu-button icon-menu" href="#"><span class="word">菜单</span></a>
         </nav>
@@ -23,22 +26,21 @@
             <section class="post-excerpt"><p>{{ pageinfo.excerpt }}</p>
             </section>
             <footer class="post-meta">
-                <img class="author-thumb" src="" alt="qwe7002" nopin="nopin">{{ pageinfo.time }}
+                <img class="author-thumb" src="{{ author_image }}" nopin="nopin">{{ pageinfo.time }}
             </footer>
         </article>
     {% endfor %}
-
         <nav class="pagination" role="navigation">
             {% if nowpage!=1 %}
                 <a class="newer-posts" href="/{{ pagename }}/page:{{ lastpage }}">&larr; 上一页</a> {% endif %}
             <span class="page-number">第 {{ nowpage }} 页 ⁄ 共 {{ pagerow }} 页</span>
-            {% if newpage!=pagerow %}
+            {% if newpage!=pagerow and pagerow !=1 %}
                 <a class="older-posts" href="/{{ pagename }}/page:{{ newpage }}">下一页 &rarr;</a> {% endif %}
         </nav>
 
     </main>
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="/">qwe7002的个人博客</a> © 2017</section>
+        <section class="copyright"><a href="/">{{ project_name }}</a></section>
         <section class="poweredby">Powered by SmartCMS , Theme Modify Casper</section>
     </footer>
 

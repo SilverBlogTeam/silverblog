@@ -5,7 +5,7 @@
     </a>
     <ul>
     {% for item in menu_list %}
-        <li class="nav-" role="presentation"><a href="{{ menu_list.item }}">{{ item }}</a></li>
+        <li class="nav-" role="presentation"><a href="{{ item.url }}">{{ item.name }}</a></li>
     {% endfor %}
 
     </ul>
