@@ -1,7 +1,6 @@
 chardet==2.3.0
 click==6.7
 colorama==0.3.2
-command-not-found==0.3
 Flask==0.12
 html5lib==0.999
 itsdangerous==0.24

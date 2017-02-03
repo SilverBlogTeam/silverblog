@@ -75,7 +75,7 @@ fieldset {
 }
 legend { border: 0; padding: 0; }
 button, input, select,
-textarea { font-family: inherit; font-size: 100%; margin: 0; }
+textarea {font-size: 100%; margin: 0; }
 button, input { line-height: normal; }
 button, select { text-transform: none; }
 button, html input[type="button"],
@@ -118,7 +118,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "Helvetica Neue", Helvetica, Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
