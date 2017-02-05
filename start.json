@@ -8,7 +8,7 @@
     },
     {
       "name": "Memcache",
-      "script": "memcached -m 256 -c 1000 -p 11211",
+      "script": "./memcached.sh",
       "watch": true,
       "merge_logs": true
     }
