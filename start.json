@@ -1,11 +1,5 @@
 {
   "apps": [
-  	{
-      "name": "Memcache",
-      "script": "./memcached.sh",
-      "watch": true,
-      "merge_logs": true
-    },
     {
       "name": "SmartBlog",
       "script": "./start.sh",
