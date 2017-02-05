@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "SmartBlog",
+      "script": "./start.sh",
+      "watch": true,
+      "merge_logs": true
+    },
+    {
+      "name": "Memcache",
+      "script": "memcached -m 256 -c 1000 -p 11211",
+      "watch": true,
+      "merge_logs": true
+    }
+  ]
+}
