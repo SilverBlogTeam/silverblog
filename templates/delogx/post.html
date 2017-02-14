@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{% include system_config.Theme+"/public/head.html" %}
+<body>
+{% include system_config.Theme+"/public/nav.html" %}
+<article>
+    {{ content | safe }}
+</article>
+<article>
+    <!--引入你的评论框模块-->
+</article>
+
+{% include system_config.Theme+"/public/foot.html" %}
+</body>
+</html>

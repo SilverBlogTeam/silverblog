@@ -1,6 +1,6 @@
-{% include "public/head.html" %}
+{% include system_config.Theme+"/public/head.html" %}
 <body class="post-template nav-closed">
-{% include "public/menu.html" %}
+{% include system_config.Theme+"/public/menu.html" %}
 <span class="nav-cover"></span>
 <div class="site-wrapper">
     <header class="main-header post-head no-cover">
@@ -13,20 +13,20 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">{{ pageinfo.title }}</h1>
+                <h1 class="post-title">{{ page_info.title }}</h1>
                 <section class="post-meta">
-                    <time class="post-date" datetime="{{ pageinfo.time }}">{{ pageinfo.time }}</time>
+                    <time class="post-date" datetime="{{ page_info.time }}">{{ page_info.time }}</time>
                 </section>
             </header>
 
             <section class="post-content">
-                {{ context|safe }}
+                {{ content|safe }}
             </section>
 
             <footer class="post-footer">
 
                 <figure class="author-image">
-                    <img class="img" src="{{ author_image }}">
+                    <img class="img" src="{{ system_config.Author_Image }}">
                 </figure>
 
                 <section class="author">
@@ -64,9 +64,9 @@
     </main>
 
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="/">{{ project_name }}</a></section>
-        <section class="poweredby">Powered by SmartBlog , Theme Modify Casper</section>
+        <section class="copyright"><a href="/">{{ system_config.Project_Name }}</a></section>
+        <section class="poweredby">Powered by SmartBlog , Theme By Casper</section>
     </footer>
 
 </div>
-{% include "public/foot.html" %}
+{% include system_config.Theme+"/public/foot.html" %}
