@@ -22,10 +22,10 @@
     <div class="extra-pagination inner">
         <nav class="pagination" role="navigation">
             {% if now_page!=1 %}
-                <a class="newer-posts" href="/index/page:{{ last_page }}">&larr; 上一页</a> {% endif %}
+                <a class="newer-posts" href="/index/p/{{ last_page }}">&larr; 上一页</a> {% endif %}
             <span class="page-number">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
             {% if now_page!=page_row and page_row !=1 %}
-                <a class="older-posts" href="/index/page:{{ next_page }}">下一页 &rarr;</a> {% endif %}
+                <a class="older-posts" href="/index/p/{{ next_page }}">下一页 &rarr;</a> {% endif %}
         </nav>
     </div>
 
