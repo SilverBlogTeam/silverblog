@@ -7,5 +7,6 @@
   "Paging": 10,
   "Cache": true,
   "Theme": "casper",
-  "Memcached_Connect":"127.0.0.1:11211"
+  "Memcached_Connect":"127.0.0.1:11211",
+  "API_Password":""
 }
