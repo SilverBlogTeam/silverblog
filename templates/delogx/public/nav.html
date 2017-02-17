@@ -4,12 +4,11 @@
     <div>
         <nav class="nav-menu">
             <ul>
+                <li><a href="/">首页</a></li>
                 {% for item in menu_list %}
-                    <li><a href="{{ item.url }}">{{ item.name }}</a></li>|
+                | <li><a href="{{ item.url }}">{{ item.name }}</a></li>
                 {% endfor %}
-                <li><a href="/feed">订阅</a></li>
             </ul>
-
         </nav>
     </div>
 </header>

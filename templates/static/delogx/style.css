@@ -30,7 +30,6 @@ audio:not([controls]) {
 }
 
 html {
-    font-family:"Helvetica Neue","Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     background: #fff;
     color: #000;
     -webkit-text-size-adjust: 100%;
@@ -41,6 +40,9 @@ html,
 button,
 input,
 select,
+textarea {
+    font-family: sans-serif;
+}
 
 body {
     margin: 0;
@@ -62,37 +64,31 @@ a:active {
 h1 {
     margin: 0.67em 0;
     font-size: 2em;
-    line-height: 0.06em;
 }
 
 h2 {
     margin: 0.83em 0;
     font-size: 1.5em;
-    line-height: 0.05em;
 }
 
 h3 {
     margin: 1em 0;
     font-size: 1.17em;
-    line-height: 0.04em;
 }
 
 h4 {
     margin: 1.33em 0;
     font-size: 1em;
-    line-height: 0.03em;
 }
 
 h5 {
     margin: 1.67em 0;
     font-size: 0.83em;
-    line-height: 0.02em;
 }
 
 h6 {
     margin: 2.33em 0;
     font-size: 0.75em;
-    line-height: 0.01em;
 }
 
 abbr[title] {
@@ -109,6 +105,7 @@ kbd,
 pre,
 samp {
     font-size: 1em;
+    font-family: monospace;
 }
 
 pre {
@@ -148,6 +145,7 @@ textarea {
     margin: 0;
     vertical-align: baseline;
     font-size: 100%;
+    font-family: inherit;
 }
 
 button,
@@ -218,6 +216,7 @@ header {
     color: #000;
     text-decoration: none;
     font-size: 42px;
+    font-family: "Droid Serif",Georgia,"Times New Roman",STHeiti,serif;
     transition: color ease-out .4s;
 }
 
@@ -312,7 +311,6 @@ article .post-title:hover {
 
 article .post-content {
     letter-spacing: 0.03em;
-    word-wrap: break-word !important;
 }
 
 article .post-content p {
@@ -499,5 +497,3 @@ footer a:hover {
     text-align: center;
     font-size: 2em;
 }
-
-li { word-wrap: break-word; }
