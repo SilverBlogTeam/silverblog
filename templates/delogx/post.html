@@ -4,7 +4,11 @@
 <body>
 {% include system_config.Theme+"/public/nav.html" %}
 <article>
-    {{ content | safe }}
+    <h1 class="post-title"><a href="/repair-computer">{{ page_info.title }}</a></h1>
+    <span class="post-time">{{ page_info.time }}</span>
+    <div class="post-content">
+        {{ content | safe }}
+    </div>
 </article>
 <article>
     <!--引入你的评论框模块-->
