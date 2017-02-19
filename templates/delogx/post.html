@@ -4,7 +4,7 @@
 <body>
 {% include system_config.Theme+"/public/menu.html" %}
 <article>
-    <h1 class="post-title"><a href="/{{ page_info.name }}">{{ page_info.title }}</a></h1>
+    <h1 class="post-title"><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h1>
     <span class="post-time">{{ page_info.time }}</span>
     <div class="post-content">
         {{ content | safe }}
