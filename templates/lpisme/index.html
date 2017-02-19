@@ -53,12 +53,12 @@
             <div class="page-nav">
                 <div class="page-prev left" title="上一页">
                     {% if now_page!=1 %}
-                        <a class="prev" href="{% if static %}/index_{{ last_page }}.html{% elseif %}/index/p/{{ last_page }}{% endif %}"><i class="icon icon-left"></i> Previous</a>
+                        <a class="prev" href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}"><i class="icon icon-left"></i> Previous</a>
                     {% endif %}
                 </div>
                 <div class="page-next right" title="下一页">
                     {% if now_page!=page_row and page_row !=1 %}
-                        <a class="next" href="{% if static %}/index_{{ next_page }}.html{% elseif %}/index/p/{{ next_page }}{% endif %}">Next <i class="icon icon-right"></i></a>
+                        <a class="next" href="{% if static %}/index_{{ next_page }}.html{% else %}/index/p/{{ next_page }}{% endif %}">Next <i class="icon icon-right"></i></a>
                     {% endif %}
                 </div>
             </div>
