@@ -5,10 +5,10 @@
     <link rel="stylesheet" type="text/css" href="/static/{{ system_config.Theme }}/style.css">
     <link href="/static/{{ system_config.Theme }}/highlight.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
-    {% if title=="主页" %}
+    {% if page_info.title=="主页" %}
         <title>{{ system_config.Project_Name }}</title>
     {% else %}
-        <title>{{ title }}</title>
+        <title>{{ page_info.title }}</title>
     {% endif %}
     <meta name="description" content="{{ system_config.Project_Description }}">
 </head>
