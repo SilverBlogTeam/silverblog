@@ -7,7 +7,7 @@
                 {% for item in menu_list %}
                     <li><a href="/{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a></li>|
                 {% endfor %}
-                <li><a href="/rss{% if static %}.xml{% endif %}">订阅</a></li>
+                <li><a href="/rss">订阅</a></li>
             </ul>
 
         </nav>
