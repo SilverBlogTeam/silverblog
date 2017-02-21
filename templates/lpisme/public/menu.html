@@ -12,7 +12,7 @@
 <nav class="nav">
     <div class="nav-wrapper right">
         {% for item in menu_list %}
-            <a href="/{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a>
+            <a href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a>
         {% endfor %}
     </div>
 </nav>
