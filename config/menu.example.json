@@ -2,9 +2,5 @@
   {
     "name": "主页",
     "url": "index"
-  },
-  {
-    "name": "订阅",
-    "url": "feed"
   }
 ]
