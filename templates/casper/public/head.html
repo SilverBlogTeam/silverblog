@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page_info.title }} - {{ system_config.Project_Name }}</title>
+    {% if page_info.title=="index" %}
+        {% set title="主页" %}
+    {% else %}
+        {% set title=page_info.title %}
+    {% endif %}
+    <title>{{ title }} - {{ system_config.Project_Name }}</title>
         <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/static/{{ system_config.Theme }}/css/screen.css">
-    {% include "include/head.html" %}
+    {% include "include/head.html" ignore missing %}
 </head>

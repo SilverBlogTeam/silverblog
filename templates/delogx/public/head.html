@@ -5,11 +5,11 @@
     <link rel="stylesheet" type="text/css" href="/static/{{ system_config.Theme }}/style.css">
     <link href="/static/{{ system_config.Theme }}/highlight.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ system_config.Project_URL }}/static/user_file/favicon.ico">
-    {% if page_info.title=="主页" %}
+    {% if page_info.title=="index" %}
         <title>{{ system_config.Project_Name }}</title>
     {% else %}
         <title>{{ page_info.title }}</title>
     {% endif %}
     <meta name="description" content="{{ system_config.Project_Description }}">
-{% include "include/head.html" %}
+{% include "include/head.html" ignore missing %}
 </head>
