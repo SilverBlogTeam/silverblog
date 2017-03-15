@@ -13,11 +13,11 @@
 {% endfor %}
 
 <p>
-    {% if now_page!=1 %}
+    {% if now_page != 1 %}
         <span class="prev-page"><a href="/index/p/{{ last_page }}">上一页</a></span>
     {% endif %}
     <span class="page-number">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
-    {% if now_page!=page_row and page_row !=1 %}
+    {% if now_page != page_row and page_row != 1 %}
         <span class="next-page"><a href="/index/p/{{ next_page }}">下一页</a></span>
     {% endif %}
 
