@@ -1,0 +1,10 @@
+<nav class="pagination" role="navigation">
+    {% if now_page !=1 %}
+        <a class="newer-posts"
+           href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}">&larr;
+            上一页</a> {% endif %}
+    <span class="page-number">第 {{ now_page }} 页 ⁄ 共 {{ page_row }} 页</span>
+    {% if now_page != page_row and page_row != 1 %}
+        <a class="older-posts"
+           href="{% if static %}/index_{{ next_page }}.html{% else %}/index/p/{{ next_page }}{% endif %}">下一页 &rarr;</a> {% endif %}
+</nav>

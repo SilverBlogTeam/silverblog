@@ -4,9 +4,11 @@
         <span class="hidden">关闭</span>
     </a>
     <ul>
-    {% for item in menu_list %}
-        <li class="nav-" role="presentation"><a href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a></li>
-    {% endfor %}
+        {% for item in menu_list %}
+            <li class="nav-" role="presentation"><a
+                    href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
 
     </ul>
     <a class="subscribe-button icon-feed" href="/rss">订阅</a>

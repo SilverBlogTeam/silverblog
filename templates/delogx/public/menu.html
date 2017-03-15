@@ -5,7 +5,9 @@
         <nav class="nav-menu">
             <ul>
                 {% for item in menu_list %}
-                    <li><a href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a></li>|
+                    <li>
+                        <a href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a>
+                    </li>|
                 {% endfor %}
                 <li><a href="/rss">订阅</a></li>
             </ul>
