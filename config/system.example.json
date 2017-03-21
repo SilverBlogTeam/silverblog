@@ -12,5 +12,6 @@
   "Memcached_Connect":"127.0.0.1:11211",
   "API_Password":"",
   "Rss_Full_Content":true,
-  "Restful_API":false
+  "Restful_API":false,
+  "Editor":"vim"
 }
