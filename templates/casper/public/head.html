@@ -11,7 +11,8 @@
         {% set title=page_info.title %}
     {% endif %}
     <title>{{ title }}</title>
-    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
+    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/static/user_file/favicon.ico">
+    <link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/{{ system_config.Theme }}/css/screen.css">
     {% include "include/head.html" ignore missing %}
 </head>
