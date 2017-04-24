@@ -17,11 +17,11 @@
 <p>
     {% if now_page != 1 %}
         <span class="prev-page"><a
-                href="/index/p/{{ last_page }}{% if static %}.html{% endif %}">上一页</a></span>
+                href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">上一页</a></span>
     {% endif %}
     {% if now_page != page_row and page_row != 1 %}
         <span class="next-page"><a
-                href="/index/p/{{ next_page }}{% if static %}.html{% endif %}">下一页</a></span>
+                href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">下一页</a></span>
     {% endif %}
 
     {% include system_config.Theme+"/public/foot.html" %}

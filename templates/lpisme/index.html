@@ -56,14 +56,14 @@
                 <div class="page-prev left" title="上一页">
                     {% if now_page != 1 %}
                         <a class="prev"
-                           href="/index/p/{{ last_page }}{% if static %}.html{% endif %}"><i
+                           href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}"><i
                                 class="icon icon-left"></i> Previous</a>
                     {% endif %}
                 </div>
                 <div class="page-next right" title="下一页">
                     {% if now_page != page_row and page_row !=1 %}
                         <a class="next"
-                           href="/index/p/{{ next_page }}{% if static %}.html{% endif %}">Next
+                           href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">Next
                             <i class="icon icon-right"></i></a>
                     {% endif %}
                 </div>
