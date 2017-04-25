@@ -7,7 +7,7 @@
   "Author_Introduction":"",
   "Paging": 10,
   "Cache": true,
-  "Theme": "casper",
+  "Theme": "i-material",
   "Memcached_Connect":"127.0.0.1:11211",
   "API_Password":"",
   "Rss_Full_Content":true,
