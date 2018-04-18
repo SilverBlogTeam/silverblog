@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ -f "install.sh" ]; then
+if [ -f "docker_install.sh" ]; then
     cd ..
 fi
 echo "Generate a Nginx configuration file..."
